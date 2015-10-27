@@ -34,6 +34,12 @@ function layobservers_register_required_plugins() {
     ),
 
     array(
+      'name'        => 'Reorder Posts',
+      'slug'        => 'metronet-reorder-posts',
+      'required'    => true,
+    ),
+
+    array(
       'name'        => 'Yoast SEO',
       'slug'        => 'wordpress-seo',
     ),
