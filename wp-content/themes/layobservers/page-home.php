@@ -6,8 +6,8 @@ Template Name: Homepage
 
 <?php while (have_posts()) : the_post(); ?>
   <?php get_template_part( 'header'); ?>
-	
-	
+
+
 	  	<div id="news-banner" class="container-fluid">
 	  	<a href="<?php echo get_post_meta( $post->ID, "banner-link", true ); ?>" title="Link to <?php echo get_post_meta( $post->ID, "banner_heading", true ); ?>">
 	  		<img src="<?php echo get_post_meta( $post->ID, "banner-image", true ); ?>" alt="Banner background image">
@@ -17,7 +17,7 @@ Template Name: Homepage
 		  			<h2><?php echo get_post_meta( $post->ID, "banner_heading", true ); ?></h2>
 		  			<p><?php echo get_post_meta( $post->ID, "banner-sub-heading", true ); ?></p>
 		  			</a>
-		  			
+
 		  			<!-- <a href="<?php echo get_post_meta( $post->ID, "banner-link", true ); ?>" class= "float-right">Read more ></a> -->
 		  		</div>
 		  		</a>
@@ -86,28 +86,35 @@ Template Name: Homepage
 												<?php the_post_thumbnail('large'); ?>
 											</div>
 										<?php endif; ?>
-								
+
 										<?php the_excerpt(); ?>
 
-							
+
 							</div>
 							</li>
 
 						<?php
 					endwhile;
+					wp_reset_postdata();
 					?>
 
 				</ul>
-				
+
 			<a href="/imb/news/" class= "float-right em-link">More news ></a>
 
 			</div>
+
+			<?php
+			$video = get_post_meta($post->ID, 'home-video', true);
+			if (!empty($video)):
+			?>
 			<div class="media main-item video-container">
 				<h2>Latest media</h2>
 					<div class="videoWrapper">
-					 	<iframe width="640" height="360" src="//www.youtube.com/embed/VZla8-O_qH8" frameborder="0" allowfullscreen></iframe> 
+					  <?php echo wp_oembed_get($video); ?>
 					 </div>
 			</div>
+      <?php endif; ?>
 
   		</div>
 	</div>
