@@ -6243,6 +6243,7 @@ ul.child-list li:last-child {
   display: inline-block;
   border-bottom: 1px solid #c5c5c5;
   padding-bottom: 1em;
+  width: 100%;
 }
 .side-item {
   display: block;
