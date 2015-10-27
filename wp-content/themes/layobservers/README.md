@@ -1,5 +1,4 @@
-wp-lawcom
+wp-layobservers
 =========
 
-WordPress theme for Law Commission
-
+WordPress theme for the Lay Observers website.
