@@ -2,7 +2,7 @@
   <div class="container">
 
 <div id="branding">
-<a href="<?php echo site_url(); ?>"><img alt="IMB Logo" src="<?php bloginfo('template_directory'); ?>/assets/img/IMBLogo_2X.png"/></a>
+<a href="<?php echo site_url(); ?>"><img alt="Lay Observers Logo" src="<?php bloginfo('template_directory'); ?>/assets/img/logo.png"/></a>
 </div>
 
 <div id="search">
