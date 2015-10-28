@@ -265,7 +265,7 @@ if( function_exists('register_field_group') ):
 
 register_field_group(array (
 	'key' => 'group_553f8f4ba3227',
-	'title' => 'Vacany Map',
+	'title' => 'Vacancy Map',
 	'fields' => array (
 		array (
 			'key' => 'field_553f8f672ac4f',
