@@ -6484,6 +6484,7 @@ ul a {
 }
 #branding img {
   max-width: 200px;
+  width: 100%;
 }
 /* - - - - - - Navigation - - - - - - */
 .nav:before,
