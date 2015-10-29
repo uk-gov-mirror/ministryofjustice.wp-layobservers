@@ -59,8 +59,3 @@ add_action('widgets_init', 'roots_widgets_init');
  * Define user roles
  */
 new \MOJ_User_Roles();
-
-// Remove legacy role which we no longer need
-if (get_role('imb-editor')) {
-  remove_role('imb-editor');
-}
