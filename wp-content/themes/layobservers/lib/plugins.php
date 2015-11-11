@@ -64,3 +64,15 @@ function layobservers_register_required_plugins() {
 
   tgmpa($plugins, $config);
 }
+
+/**
+ * Hide "cannot update" permissions error.
+ * This is a bug with TGM, which shows "Sorry, but you do not have the correct permissions to update"
+ * error message to users who do not have permission to update plugins.
+ */
+function tgm_admin_head() {
+  if (!current_user_can('update_plugins')) {
+    ?><style>#setting-error-tgmpa { display: none; }</style><?php
+  }
+}
+add_action('admin_head', 'tgm_admin_head');
