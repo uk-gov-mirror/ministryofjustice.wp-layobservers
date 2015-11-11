@@ -6448,6 +6448,18 @@ ul a {
 .wp-caption-text {
   font-size: 0.85em;
 }
+.logo-png {
+  display: none;
+}
+.logo-svg {
+  display: inline-block;
+}
+html.no-svg .logo-png {
+  display: inline-block;
+}
+html.no-svg .logo-svg {
+  display: none;
+}
 .main {
   position: relative;
   min-height: 1px;
