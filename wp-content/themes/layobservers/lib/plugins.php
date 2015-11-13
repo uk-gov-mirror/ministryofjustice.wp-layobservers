@@ -42,6 +42,7 @@ function layobservers_register_required_plugins() {
     array(
       'name'        => 'Yoast SEO',
       'slug'        => 'wordpress-seo',
+      'required'    => false,
     ),
 
   );
