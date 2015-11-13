@@ -206,57 +206,58 @@ $meta_boxes = array(
 		)
 	),
 
-array(
-	'id' => 'reports-upload-box',
-	'title' => 'Reports upload box',
-	//'slug' => 'report',
-	'pages' => array( 'report' ),
-	'context' => 'normal',
-	'priority' => 'low',
-	'fields' => array(
-		array(
-			'id' => 'report-upload',
-			'label' => 'PDF upload',
-			'type' => 'upload',
-			'desc' => 'Upload PDF version of report'
-		)
-	)
-),
+  array(
+    'id' => 'reports-upload-box',
+    'title' => 'Reports upload box',
+    //'slug' => 'report',
+    'pages' => array( 'report' ),
+    'context' => 'normal',
+    'priority' => 'low',
+    'fields' => array(
+      array(
+        'id' => 'report-upload',
+        'label' => 'PDF upload',
+        'type' => 'upload',
+        'desc' => 'Upload PDF version of report'
+      )
+    )
+  ),
 
-array(
-	'id' => 'jobs',
-	'title' => 'Jobs',
-	//'slug' => 'report',
-	'pages' => array( 'job' ),
-	'context' => 'normal',
-	'priority' => 'low',
-	'fields' => array(
-		array(
-			'id' => 'description',
-			'label' => 'Description',
-			'type' => 'textarea-simple',
-			'desc' => ''
-		),
-		array(
-			'id' => 'time-commitment',
-			'label' => 'Time commitment',
-			'type' => 'text',
-			'desc' => ''
-		),
-		array(
-			'id' => 'rcr',
-			'label' => 'Recruitment Campaign Reference',
-			'type' => 'text',
-			'desc' => ''
-		),
-		array(
-			'id' => 'closing-date',
-			'label' => 'Closing Date',
-			'type' => 'date-picker',
-			'desc' => ''
-		),
-	)
-),
+
+  array(
+    'id' => 'jobs',
+    'title' => 'Jobs',
+    //'slug' => 'report',
+    'pages' => array( 'job' ),
+    'context' => 'normal',
+    'priority' => 'low',
+    'fields' => array(
+      array(
+        'id' => 'description',
+        'label' => 'Description',
+        'type' => 'textarea-simple',
+        'desc' => ''
+      ),
+      array(
+        'id' => 'time-commitment',
+        'label' => 'Time commitment',
+        'type' => 'text',
+        'desc' => ''
+      ),
+      array(
+        'id' => 'rcr',
+        'label' => 'Recruitment Campaign Reference',
+        'type' => 'text',
+        'desc' => ''
+      ),
+      array(
+        'id' => 'closing-date',
+        'label' => 'Closing Date',
+        'type' => 'date-picker',
+        'desc' => ''
+      ),
+    )
+  ),
 
 );
 
@@ -265,7 +266,7 @@ if( function_exists('register_field_group') ):
 
 register_field_group(array (
 	'key' => 'group_553f8f4ba3227',
-	'title' => 'Vacany Map',
+	'title' => 'Vacancy Map',
 	'fields' => array (
 		array (
 			'key' => 'field_553f8f672ac4f',

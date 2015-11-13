@@ -11,12 +11,3 @@ function faq_post_init() {
 }
 
 add_action( 'init', 'faq_post_init' );
-
-function faq_taxonomy() {
-  	$args = array(
-    	'hierarchical' => true
-  	);
-  register_taxonomy( 'faq_year', 'faq', $args );
-}
-
-add_action( 'init', 'faq_taxonomy', 0 );

@@ -1,7 +1,7 @@
 <?php
-/* 
-Template Name: Category news archive
-*/
+/**
+ * Template Name: Category news archive
+ */
 ?>
 
 
@@ -20,21 +20,20 @@ Template Name: Category news archive
 		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 		$year = $post->post_name;
 
-		$args = array( 
-			'posts_per_page' => 10, 
-			'paged' => $paged,
-			'category' => 'news' );
+		$args = array(
+			'posts_per_page' => 10,
+			'paged' => $paged );
 
 		    $postslist = new WP_Query( $args );
 
 		    if ( $postslist->have_posts() ) :
-		        while ( $postslist->have_posts() ) : $postslist->the_post(); 
+		        while ( $postslist->have_posts() ) : $postslist->the_post();
 
 				 echo '<li>';
 		         echo'<div class="img-time-wrapper">';
-		         if ( has_post_thumbnail() ) : the_post_thumbnail('large'); 
-		         endif;  
-				 echo '<time class="published">'; 
+		         if ( has_post_thumbnail() ) : the_post_thumbnail('large');
+		         endif;
+				 echo '<time class="published">';
 		         echo get_the_date();
 		         echo '</time>';
 		         echo '</div>';
@@ -46,9 +45,9 @@ Template Name: Category news archive
 		         echo '</a></h4>';
 		         the_excerpt();
 		         echo '</div></li><hr/>';
-		             
 
-		         endwhile;  
+
+		         endwhile;
 
 		         endif;
 		?>

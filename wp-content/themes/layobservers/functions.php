@@ -24,8 +24,6 @@ $roots_includes = array(
 	'lib/scripts.php', // Scripts and stylesheets
 	'lib/extras.php', // Custom functions
 	'lib/plugins.php', // Required plugins
-//	'/lib/theme-options.php', // Theme options
-//	'/lib/ajax.php', // AJAX setup
 	'/lib/custom.php', // Custom functions
 	'/lib/meta-box-array.php',  // Meta box array
 	'/lib/p2p.php'  // Sets up Posts2Posts

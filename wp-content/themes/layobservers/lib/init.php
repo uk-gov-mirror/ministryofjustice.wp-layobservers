@@ -1,4 +1,7 @@
 <?php
+
+require 'classes/moj-user-roles.php';
+
 /**
  * Roots initial setup and constants
  */
@@ -18,10 +21,6 @@ function roots_setup() {
   // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
-
-  // Add post formats
-  // http://codex.wordpress.org/Post_Formats
-  add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio'));
 
   // Add HTML5 markup for captions
   // http://codex.wordpress.org/Function_Reference/add_theme_support#HTML5
@@ -55,3 +54,8 @@ function roots_widgets_init() {
   ));
 }
 add_action('widgets_init', 'roots_widgets_init');
+
+/**
+ * Define user roles
+ */
+new \MOJ_User_Roles();
