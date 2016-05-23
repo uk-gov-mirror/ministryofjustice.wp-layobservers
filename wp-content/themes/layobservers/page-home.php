@@ -5,8 +5,6 @@ Template Name: Homepage
 ?>
 
 <?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part( 'header'); ?>
-
 
 	  	<div id="news-banner" class="container-fluid">
 	  	<a href="<?php echo get_post_meta( $post->ID, "banner-link", true ); ?>" title="Link to <?php echo get_post_meta( $post->ID, "banner_heading", true ); ?>">

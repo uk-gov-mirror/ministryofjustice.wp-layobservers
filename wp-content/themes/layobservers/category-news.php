@@ -4,12 +4,7 @@
  */
 ?>
 
-
-<div class="page-header">
-	<?php the_title( '<h1>', '</h1>' ); ?>
-</div>
-
-
+<?php get_template_part('templates/page', 'header'); ?>
 
 <div class="news-archive-links">
 	<ul>
