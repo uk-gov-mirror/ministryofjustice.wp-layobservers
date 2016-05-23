@@ -5,9 +5,9 @@ Template Name: FAQs page
 */
 ?>
 
-
 <?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part( 'header'); ?>
+
+<?php get_template_part('templates/page', 'header'); ?>
 
   	<div class="row">
    		<div class="col-sm-4 min-col">
@@ -23,7 +23,7 @@ Template Name: FAQs page
 			?>
 
 <?php endwhile; ?>
-			  
+
 		  </div>
 
   		<div class="col-sm-8 max-col">
@@ -71,7 +71,7 @@ Template Name: FAQs page
 
 		  </div>
 		</div>
-			 
+
 
   		</div>
 
