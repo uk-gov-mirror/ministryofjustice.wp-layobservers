@@ -2,7 +2,7 @@
   <div class="container">
 
 <div id="branding">
-  <a href="<?php echo site_url(); ?>">
+  <a href="<?php echo home_url(); ?>">
     <img alt="Lay Observers Logo" src="<?php bloginfo('template_directory'); ?>/assets/img/lo-logo.svg" class="logo-svg" />
     <img alt="Lay Observers Logo" src="<?php bloginfo('template_directory'); ?>/assets/img/lo-logo.png" class="logo-png" />
   </a>

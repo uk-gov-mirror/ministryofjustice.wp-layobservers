@@ -16,9 +16,7 @@
       "url": "http://opensource.org/licenses/MIT"
     }
   ],
-  "scripts": {
-    "postinstall": "node node_modules/bower/bin/bower install && grunt dev"
-  },
+  "scripts": {},
   "engines": {
     "node": ">= 0.10.0"
   },
