@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a04d47cb946ecd09733b14bcad2ad4f1",
+    "content-hash": "c43c5dc3d7171a8c665d81c7bef53848",
     "packages": [
         {
             "name": "acf/advanced-custom-fields-pro",
@@ -552,6 +552,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/metronet-reorder-posts/"
+        },
+        {
+            "name": "wpackagist-plugin/option-tree",
+            "version": "2.6.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/option-tree/",
+                "reference": "tags/2.6.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/option-tree.2.6.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/option-tree/"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",

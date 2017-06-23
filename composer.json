@@ -53,7 +53,8 @@
     "acf/advanced-custom-fields-pro": "^5.5",
     "wpackagist-plugin/advanced-responsive-video-embedder": "^8.6",
     "wpackagist-plugin/metronet-reorder-posts": "^2.4",
-    "wpackagist-plugin/wordpress-seo": "^4.9"
+    "wpackagist-plugin/wordpress-seo": "^4.9",
+    "wpackagist-plugin/option-tree": "^2.6"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
