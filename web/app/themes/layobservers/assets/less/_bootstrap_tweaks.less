@@ -1,0 +1,62 @@
+/**
+ * Bootstrap Tweaks
+ * These tweaks were made to the bootstrap vendor files when they were
+ * versioned in the git repository.
+ * Now that we have a proper build process, we now use bower to pull in these
+ * vendors.
+ * This file contains a diff of the tweaks that were made.
+ */
+
+// dropdowns.less
+.dropdown-menu {
+  top: 36px;
+  background-color: #fff;
+}
+
+// forms.less
+.form-inline {
+  @media (min-width: @screen-sm-min) {
+    .input-group {
+      width: 100%;
+      .input-group-addon,
+      .input-group-btn,
+      .form-control {
+        //width: 100%;
+      }
+    }
+  }
+}
+
+.input-group-btn {
+  display: none;
+}
+
+// navbar.less
+.container,
+.container-fluid {
+  > .navbar-header,
+  > .navbar-collapse {
+    margin-top: -20px;
+
+    @media (min-width: 480px) {
+      margin-top: -40px;
+    }
+  }
+}
+
+.navbar-nav {
+  @media (max-width: @grid-float-breakpoint-max) {
+    .open .dropdown-menu {
+      > li > a,
+      .dropdown-header {
+        padding: .9em;
+      }
+    }
+  }
+}
+
+.navbar-nav {
+  > li > a {
+    background-color: @navbar-default-link-bg;
+  }
+}
