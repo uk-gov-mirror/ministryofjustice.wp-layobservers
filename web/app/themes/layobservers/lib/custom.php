@@ -19,12 +19,33 @@ foreach ( $cpt_declarations as $cpt_declaration ) {
 		require get_template_directory() . '/lib/cpt/' . $cpt_declaration;
 }
 
-// /* Get attachment ID from URL */
-function get_attachment_id_from_src( $image_src ) {
-	global $wpdb;
-	$query = "SELECT ID FROM {$wpdb->posts} WHERE guid='$image_src'";
-	$id = $wpdb->get_var( $query );
-	return $id;
+/**
+ * Get attachment ID from its URL
+ *
+ * @param string $url
+ * @return bool|int The Attachment ID or false if not found
+ */
+function get_attachment_id_from_src($url) {
+	if (($pos = strpos($url, '/uploads/')) === false) {
+		// URL does not contain /uploads/, so we won't be able to find an ID
+		return false;
+	}
+
+	// Drop everything up to (and including) /uploads/ in the URL
+	// e.g. "http://example.com/wp-content/uploads/2017/06/file.pdf"
+	//      => "2017/06/file.pdf"
+	$url_part = substr($url, $pos + strlen('/uploads/'));
+
+	$query = new WP_Query([
+		'post_type' => 'attachment',
+		'post_status' => 'inherit',
+		'meta_key' => '_wp_attached_file',
+		'meta_value' => $url_part,
+		'posts_per_page' => 1,
+		'fields' => 'ids',
+	]);
+
+	return ($query->post_count > 0) ? (int) $query->posts[0] : false;
 }
 
 /**
