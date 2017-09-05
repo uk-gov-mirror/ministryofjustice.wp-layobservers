@@ -48,13 +48,13 @@
     "koodimonni-language/core-en_gb": "^4.8",
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "wpackagist-plugin/google-analytics-dashboard-for-wp": "^5",
+    "wpackagist-plugin/google-analytics-dashboard-for-wp": "*",
     "ministryofjustice/wp-rewrite-media-to-s3": "^0.1.1",
-    "acf/advanced-custom-fields-pro": "^5.5",
-    "wpackagist-plugin/advanced-responsive-video-embedder": "^8.6",
-    "wpackagist-plugin/metronet-reorder-posts": "^2.4",
-    "wpackagist-plugin/wordpress-seo": "^4.9",
-    "wpackagist-plugin/option-tree": "^2.6"
+    "acf/advanced-custom-fields-pro": "*",
+    "wpackagist-plugin/advanced-responsive-video-embedder": "*",
+    "wpackagist-plugin/metronet-reorder-posts": "*",
+    "wpackagist-plugin/wordpress-seo": "*",
+    "wpackagist-plugin/option-tree": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
