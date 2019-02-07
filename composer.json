@@ -54,7 +54,8 @@
     "wpackagist-plugin/advanced-responsive-video-embedder": "*",
     "wpackagist-plugin/metronet-reorder-posts": "*",
     "wpackagist-plugin/wordpress-seo": "*",
-    "wpackagist-plugin/option-tree": "*"
+    "wpackagist-plugin/option-tree": "*",
+    "wpackagist-plugin/classic-editor": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
