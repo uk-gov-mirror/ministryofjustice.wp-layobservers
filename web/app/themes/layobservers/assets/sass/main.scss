@@ -21,3 +21,5 @@
 @import "layouts/_pages";            // Page styling
 @import "layouts/pages/_home";       // Home page styling
 @import "layouts/_posts";            // Post styling
+
+@import "patch";                     // rescue styles for upgrade to bootstrap 4
