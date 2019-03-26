@@ -1,10 +1,12 @@
+
+$line-height-computed: floor(($font-size-base * $line-height-base));
 body {
 	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: @main-body-text-size;
+	font-size: $main-body-text-size;
 }
 
 a {
-	color: @body-text-link;
+	color: $body-text-link;
 }
 
 img {
@@ -39,7 +41,6 @@ ul.child-list {
 }
 
 
-
 .page-header {
 	margin-top: 0;
 
@@ -53,19 +54,19 @@ ul.child-list {
 }
 
 .max-col {
-	border-left: 1px solid @thin-divider-clr;
+	border-left: 1px solid $thin-divider-clr;
 }
 
 .main-item {
 	display: inline-block;
-	border-bottom: 1px solid @thin-divider-clr;
+	border-bottom: 1px solid $thin-divider-clr;
 	padding-bottom: 1em;
   width: 100%;
 }
 
 .side-item {
 	display: block;
-	border-bottom: 5px solid @brand-secondary;
+	border-bottom: 5px solid $brand-secondary;
 	padding-bottom: 1em;
 
 		&:last-child {
@@ -79,12 +80,12 @@ ul.child-list {
 		padding: 0;
 
 		a {
-			color: @body-text-link;
+			color: $body-text-link;
 		}
 	}
 
 .widget {
-	border-bottom: 5px solid @brand-secondary;
+	border-bottom: 5px solid $brand-secondary;
 	padding-bottom: 1em;
 }
 
@@ -95,21 +96,21 @@ ul.child-list {
 }
 
 .em-link {
-	font-size: @larger-link-size;
-	color: @dark-text-clr;
+	font-size: $larger-link-size;
+	color: $dark-text-clr;
 	text-decoration: none;
 	margin-top: .5em;
 	display: inline-block;
 
 	&:hover {
-		color: @dark-text-clr;
+		color: $dark-text-clr;
 		text-decoration: underline;
 	}
 }
 
 .post-date {
   font-size: .75em;
-  color: @meta-text-clr;
+  color: $meta-text-clr;
 }
 
 .bg-fade {
@@ -157,7 +158,7 @@ ul.child-list {
 }
 
 .prev-next {
-	border-top: 1px solid @thin-divider-clr;
+	border-top: 1px solid $thin-divider-clr;
 	padding-top: 1em;
 	margin: .5em 1em;
 	display: inline-block;
@@ -168,10 +169,10 @@ ul.child-list {
 	border-bottom: 0;
 }
 .post-meta {
-	border-bottom: 1px solid @thin-divider-clr;
+	border-bottom: 1px solid $thin-divider-clr;
 	margin-bottom: 1em;
 
-		@media (min-width: @screen-sm) {
+  @include media-breakpoint-up(sm) {
 			border-bottom: 0;
 			margin-bottom: 0;
 		}
@@ -187,7 +188,7 @@ ul.child-list {
 
 		}
 
-		@media (min-width: @screen-sm) {
+  @include media-breakpoint-up(sm) {
 			width: 60%;
 		}
 }
@@ -234,7 +235,7 @@ ul.child-list {
 
 .top-margin-sm {
 	margin-top: 1em;
-		@media (min-width: @screen-sm) {
+  @include media-breakpoint-up(sm) {
 		margin-top: 0;
 		}
 

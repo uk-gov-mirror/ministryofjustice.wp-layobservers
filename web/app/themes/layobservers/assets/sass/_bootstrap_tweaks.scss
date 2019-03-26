@@ -7,15 +7,15 @@
  * This file contains a diff of the tweaks that were made.
  */
 
-// dropdowns.less
+// dropdowns.scss
 .dropdown-menu {
   top: 36px;
   background-color: #fff;
 }
 
-// forms.less
+// forms.scss
 .form-inline {
-  @media (min-width: @screen-sm-min) {
+  @include media-breakpoint-up(sm) {
     .input-group {
       width: 100%;
       .input-group-addon,
@@ -31,7 +31,7 @@
   display: none;
 }
 
-// navbar.less
+// navbar.scss
 .container,
 .container-fluid {
   > .navbar-header,
@@ -45,7 +45,7 @@
 }
 
 .navbar-nav {
-  @media (max-width: @grid-float-breakpoint-max) {
+  @include media-breakpoint-up(sm) {
     .open .dropdown-menu {
       > li > a,
       .dropdown-header {
@@ -57,6 +57,6 @@
 
 .navbar-nav {
   > li > a {
-    background-color: @navbar-default-link-bg;
+    background-color: $navbar-default-link-bg;
   }
 }

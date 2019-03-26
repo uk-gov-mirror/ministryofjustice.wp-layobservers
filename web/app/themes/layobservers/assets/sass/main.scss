@@ -1,8 +1,13 @@
 // Bootstrap
-@import "_bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap-reboot";
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "_variables";
 @import "_bootstrap_tweaks";
 
 // Roots
+@import "layouts/_grid";
 @import "_global";                   // Base styling & custom mixins
 @import "components/_buttons";       // Button tweaks
 @import "components/_forms";         // Form tweaks

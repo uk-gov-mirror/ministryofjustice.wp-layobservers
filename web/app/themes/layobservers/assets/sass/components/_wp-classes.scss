@@ -9,35 +9,35 @@
 }
 .aligncenter {
   display: block;
-  margin: (@line-height-computed / 2) auto;
+  margin: ($line-height-computed / 2) auto;
 }
 .alignleft,
 .alignright {
-  margin-bottom: (@line-height-computed / 2);
+  margin-bottom: ($line-height-computed / 2);
 }
-@media (min-width: @screen-sm-min) {
+@include media-breakpoint-up(sm) {
   // Only float if not on an extra small device
   .alignleft {
     float: left;
-    margin-right: (@line-height-computed / 2);
+    margin-right: ($line-height-computed / 2);
   }
   .alignright {
     float: right;
-    margin-left: (@line-height-computed / 2);
+    margin-left: ($line-height-computed / 2);
   }
 }
 
 // Captions
 .wp-caption {
-  &:extend(.thumbnail all);
+  @extend .thumbnail !optional
 }
 .wp-caption-text {
-  &:extend(.thumbnail .caption all);
-  font-size: @caption-text-size;
+  /*@extend .thumbnail .caption;*/
+  font-size: $caption-text-size;
 }
 
 // Text meant only for screen readers
 .screen-reader-text {
-  &:extend(.sr-only all);
-  &:extend(.sr-only-focusable all);
+  @extend .sr-only;
+  @extend .sr-only-focusable;
 }
