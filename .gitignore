@@ -7,13 +7,12 @@
 # Application
 web/app/languages
 web/app/plugins/*
-!web/app/plugins/.gitkeep
-web/app/mu-plugins/*
-!web/app/mu-plugins/.gitkeep
 web/app/upgrade
 web/app/uploads/*
+
+!web/app/mu-plugins/.gitkeep
+!web/app/plugins/.gitkeep
 !web/app/uploads/.gitkeep
-web/app/themes/layobservers/dist/*
 
 # WordPress
 web/wp
@@ -29,4 +28,5 @@ vendor/*
 !vendor/.gitkeep
 
 # Theme
+web/app/themes/layobservers/dist
 web/app/themes/layobservers/node_modules
