@@ -18,6 +18,7 @@
   @include media-breakpoint-up(sm) {
     .input-group {
       width: 100%;
+
       .input-group-addon,
       .input-group-btn,
       .form-control {
@@ -36,7 +37,7 @@
 .container-fluid {
   > .navbar-header,
   > .navbar-collapse {
-    margin-top: -20px;
+    margin-top: -40px;
 
     @media (min-width: 480px) {
       margin-top: -40px;

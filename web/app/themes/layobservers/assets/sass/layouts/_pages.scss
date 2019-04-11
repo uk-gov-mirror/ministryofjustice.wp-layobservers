@@ -16,8 +16,7 @@
     bottom: 0;
     width: 100%;
     height: auto;
-    background-color: $brand-secondary;
-    background-color: fade($brand-secondary, 90%);
+    background-color: rgba($brand-secondary, 90%);
     padding: 15px;
     color: $light-text-clr;
 

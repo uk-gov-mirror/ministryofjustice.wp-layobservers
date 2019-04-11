@@ -8,7 +8,7 @@ mix_.setPublicPath('./dist')
 
 
 mix_.browserSync({
-  proxy: 'lawcom.docker'
+  proxy: 'layobservers.docker'
 });
 
 

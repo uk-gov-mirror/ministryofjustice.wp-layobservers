@@ -19,9 +19,13 @@ the_post();
       <form role="search" method="get" class="search-form form-inline vs-search" action="">
         <label class="sr-only"><?php _e('Search for:', 'roots'); ?></label>
         <div class="input-group">
-          <input type="search" value="<?php if (isset($_GET['vs'])) echo esc_attr($_GET['vs']); ?>" name="vs" class="search-field form-control" placeholder="<?php _e('Search vacancies', 'roots'); ?>">
+          <input type="search" value="<?php if (isset($_GET['vs'])) {
+            echo esc_attr($_GET['vs']);
+          } ?>" name="vs" class="search-field form-control" placeholder="<?php _e('Search vacancies', 'roots'); ?>">
           <span class="input-group-btn">
-            <button type="submit" class="search-submit btn btn-default"><img src="<?php bloginfo('template_directory'); ?>/assets/img/search-icon.png" alt="Search Vacancies"></button>
+            <button type="submit" class="search-submit btn btn-default"><img
+                src="<?php bloginfo('template_directory'); ?>/assets/img/search-icon.png"
+                alt="Search Vacancies"></button>
           </span>
         </div>
       </form>
@@ -41,14 +45,14 @@ the_post();
     );
 
     // Sort order
-    $sort = get_query_var( 'sort' );
+    $sort = get_query_var('sort');
     if (!empty($sort)) {
       if ($sort == 'title') {
         $orderby = array(
           'order' => 'ASC',
           'orderby' => 'title',
         );
-      } elseif($sort == 'close') {
+      } elseif ($sort == 'close') {
         $orderby = array(
           'orderby' => 'meta_value',
           'meta_key' => 'closing-date',
@@ -61,7 +65,7 @@ the_post();
     }
 
     // Search query
-    $vs = get_query_var( 'vs' );
+    $vs = get_query_var('vs');
     if (!empty($vs)) {
       $search = array(
         's' => esc_sql($vs)
@@ -91,10 +95,11 @@ the_post();
     <?php if (!empty($locations)): ?>
       <a href="#" class="view-map">View on a map</a>
       <div class="acf-map">
-        <?php foreach($locations as $location): ?>
+        <?php foreach ($locations as $location): ?>
           <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>">
             <h5><?php echo $location['title']; ?></h5>
-            <p><a href="#" onclick="return jumpToVacancy(<?php echo $location['id']; ?>)">Click here for more info</a></p>
+            <p><a href="#" onclick="return jumpToVacancy(<?php echo $location['id']; ?>)">Click here for more info</a>
+            </p>
           </div>
         <?php endforeach; ?>
       </div>

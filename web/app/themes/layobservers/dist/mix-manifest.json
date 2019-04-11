@@ -1,11 +1,11 @@
 {
-    "/js/main.min.js": "/js/main.min.js?id=fe6c4aa42575b73b9dba",
-    "/css/main.min.css": "/css/main.min.css?id=cd4a1275f755bdd2466e",
-    "/images/lo-logo.png": "/images/lo-logo.png?id=851668e97f322098bb1b",
-    "/images/lo-logo.svg": "/images/lo-logo.svg?id=c2b69ae361549182c716",
-    "/images/nav-divider.gif": "/images/nav-divider.gif?id=1023dc6c98c579ed7b51",
-    "/images/news-banner.jpg": "/images/news-banner.jpg?id=818d8523d4e01d98460b",
-    "/images/red-search-icon.gif": "/images/red-search-icon.gif?id=23f02048277b9b8db35b",
-    "/images/report-icon.png": "/images/report-icon.png?id=fba836bbdeb8b5347972",
-    "/images/search-icon.png": "/images/search-icon.png?id=0bb3c7101f5658b03db2"
+    "/js/main.min.js": "/js/main.min.js",
+    "/css/main.min.css": "/css/main.min.css",
+    "/images/lo-logo.png": "/images/lo-logo.png",
+    "/images/lo-logo.svg": "/images/lo-logo.svg",
+    "/images/nav-divider.gif": "/images/nav-divider.gif",
+    "/images/news-banner.jpg": "/images/news-banner.jpg",
+    "/images/red-search-icon.gif": "/images/red-search-icon.gif",
+    "/images/report-icon.png": "/images/report-icon.png",
+    "/images/search-icon.png": "/images/search-icon.png"
 }

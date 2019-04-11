@@ -13,7 +13,7 @@ web/app/mu-plugins/*
 web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
-web/app/themes/lawcom/dist/
+web/app/themes/layobservers/dist/*
 
 # WordPress
 web/wp
@@ -30,4 +30,3 @@ vendor/*
 
 # Theme
 web/app/themes/layobservers/node_modules
-web/app/themes/layobservers/assets/vendor

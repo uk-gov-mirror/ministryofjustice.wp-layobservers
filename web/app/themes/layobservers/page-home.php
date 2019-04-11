@@ -22,7 +22,7 @@ Template Name: Homepage
 	  	</div>
 
   	<div class="row">
-  		<div class="col-sm-3 min-col">
+  		<div class="col-md-3 min-col">
   			<div class="quick-links side-item">
   				<ul>
   					<li><a href="<?php echo get_permalink( get_post_meta( $post->ID, "quick-link-1-page", true )); ?>"><?php echo get_post_meta( $post->ID, "quick-link-1", true ); ?> ></a></li>
@@ -49,7 +49,7 @@ Template Name: Homepage
   				</ul>
   			</div>
   		</div>
-  		<div class="col-sm-9 max-col">
+  		<div class="col-md-9 max-col">
 			<div class="intro main-item">
 				<h2><?php echo get_post_meta( $post->ID, "welcome-title", true ); ?></h2>
 				<p><?php echo get_post_meta( $post->ID, "welcome-text", true ); ?></p>

@@ -1,0 +1,10 @@
+#search {
+
+  form.search-form {
+    float:right;
+    @include media-breakpoint-up(sm) {
+      width: 70%
+    }
+  }
+
+}
