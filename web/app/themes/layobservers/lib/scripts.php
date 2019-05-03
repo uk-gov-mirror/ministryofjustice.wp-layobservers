@@ -27,7 +27,7 @@ function roots_scripts()
   $assets = array(
     'css' => '/dist' . $assets['/css/main.min.css'],
     'js' => '/dist' . $assets['/js/main.min.js'],
-    'jquery' => '//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js',
+    'jquery' => '//ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js',
     'jq-migrate'  => '//code.jquery.com/jquery-migrate-3.0.1.min.js'
   );
 
@@ -45,7 +45,7 @@ function roots_scripts()
    */
   if (!is_admin() && current_theme_supports('jquery-cdn')) {
     wp_deregister_script('jquery');
-    wp_enqueue_script('jquery', $assets['jquery'], [], '3.4.1', false);
+    wp_enqueue_script('jquery', $assets['jquery'], [], '3.4.0', false);
 
     wp_deregister_script('jquery-migrate');
     wp_enqueue_script('jquery-migrate', $assets['jq-migrate'], ['jquery'], '3.0.1', false);
