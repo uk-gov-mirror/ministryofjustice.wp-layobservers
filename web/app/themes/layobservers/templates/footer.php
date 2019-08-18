@@ -8,7 +8,7 @@
 
 <?php if(is_page('current-vacancies')): ?>
 <!-- Google Code for IMB Apply Conversion Page -->
-<script type="text/javascript">
+<script>
 /* <![CDATA[ */
 var google_conversion_id = 973375943;
 var google_conversion_language = "en";
@@ -18,7 +18,7 @@ var google_conversion_label = "OyiqCJf02F4Qx5OS0AM";
 var google_remarketing_only = false;
 /* ]]> */
 </script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+<script src="//www.googleadservices.com/pagead/conversion.js">
 </script>
 <noscript>
 <div style="display:inline;">

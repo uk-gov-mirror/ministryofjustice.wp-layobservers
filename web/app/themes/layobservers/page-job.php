@@ -17,9 +17,9 @@ the_post();
   <div class="col-sm-7 col-sm-pull-5">
     <div class="job-sort">
       <form role="search" method="get" class="search-form form-inline vs-search" action="">
-        <label class="sr-only"><?php _e('Search for:', 'roots'); ?></label>
+        <label for="search" class="sr-only"><?php _e('Search for:', 'roots'); ?></label>
         <div class="input-group">
-          <input type="search" value="<?php if (isset($_GET['vs'])) {
+          <input id="search" type="search" value="<?php if (isset($_GET['vs'])) {
             echo esc_attr($_GET['vs']);
           } ?>" name="vs" class="search-field form-control" placeholder="<?php _e('Search vacancies', 'roots'); ?>">
           <span class="input-group-btn">

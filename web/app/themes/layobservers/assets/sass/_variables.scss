@@ -1,47 +1,34 @@
 // Grid settings
 // -------------------------
-
-$main-sm-columns:       $grid-columns;
-$sidebar-sm-columns:    4;
-
-
+$main-sm-columns : $grid-columns;
+$sidebar-sm-columns : 4;
 // Brand colors
 // -------------------------
-
-$brand-primary:         #e1eaf1;
-$brand-secondary:       #6894bb;
-$body-text-link:		#0071bc;
-$thin-divider-clr:		#c5c5c5;
-$dark-text-clr:			#000;
-$light-text-clr:		#fff;
-$meta-text-clr:			#aaa;
-$left-link-arrow:	#d7002c;
-
+$brand-primary : #e1eaf1;
+$brand-secondary : #6894bb;
+$body-text-link: #0071bc;
+$thin-divider-clr: #c5c5c5;
+$dark-text-clr: #000;
+$light-text-clr: #fff;
+$meta-text-clr: #aaa;
+$left-link-arrow: #d7002c;
 // Dropdowns
 // -------------------------
-
 $dropdown-bg: #fff;
-
 // Navbars
 // -------------------------
-$navbar-default-bg:                        #fff;
-$navbar-default-link-color:                #000;
-$navbar-default-link-bg:             	     $brand-primary;
-$navbar-default-link-hover-bg:             lighten($navbar-default-link-bg, 6%);
-$navbar-default-link-hover-dropdown-bg:    lighten($navbar-default-link-bg, 16%);
-$navbar-default-link-active-color:         #000;
-$navbar-default-link-active-bg:            lighten($navbar-default-link-bg, 8%);
-		
-
+$navbar-default-bg : #fff;
+$navbar-default-link-color : #000;
+$navbar-default-link-bg : $brand-primary;
+$navbar-default-link-hover-bg : lighten($navbar-default-link-bg, 6%);
+$navbar-default-link-hover-dropdown-bg : lighten($navbar-default-link-bg, 16%);
+$navbar-default-link-active-color : #000;
+$navbar-default-link-active-bg : lighten($navbar-default-link-bg, 8%);
 // Font sizes
 // -------------------------
-
-$main-body-text-size:	16px;
-$caption-text-size:		.85em;
-$larger-link-size:		1.4em;
-
-
+$main-body-text-size: 16px;
+$caption-text-size: .85em;
+$larger-link-size: 1em;
 // Glyphicons path
 // -------------------------
-
-$icon-font-path:        "../vendor/bootstrap/fonts/";
+$icon-font-path : "../vendor/bootstrap/fonts/";
