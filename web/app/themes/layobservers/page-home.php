@@ -23,7 +23,7 @@ Template Name: Homepage
  				</ul>
  			</div>
  			<div class="about side-item">
- 				<h2 class="sr-only">Who are we?</h2>
+ 				<h2>Who are we?</h2>
  				<p><?php echo get_post_meta( $post->ID, "sidebar-text-p1", true ); ?></p>
  				<p><?php echo get_post_meta( $post->ID, "sidebar-text-p2", true ); ?></p>
  			</div>
@@ -88,7 +88,6 @@ Template Name: Homepage
 					</div>
 			</div>
       <?php endif; ?>
-  		</div>
-		</div>
+  	</div>
 	</div>
 <?php endwhile; ?>
