@@ -33,19 +33,19 @@
     "popper.js": "^1.14.7"
   },
   "devDependencies": {
-    "acorn": "^6.1.1",
-    "ajv": "^6.9.2",
+    "acorn": "^6.3.0",
+    "ajv": "^6.10.2",
     "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "^2.0.1",
-    "cross-env": "^5.2.0",
-    "details-element-polyfill": "^2.3.1",
-    "laravel-mix": "^4.0.15",
+    "cross-env": "^5.2.1",
+    "details-element-polyfill": "^2.4.0",
+    "laravel-mix": "^4.1.4",
     "resolve-url-loader": "^2.3.1",
-    "sass": "^1.19.0",
-    "sass-loader": "^7.1.0",
+    "sass": "^1.22.12",
+    "sass-loader": "^7.3.1",
     "scrollpoints": "^0.4.0",
     "url-search-params-polyfill": "^4.0.0",
     "vue-template-compiler": "^2.6.8",
-    "webpack": "^4.30.0"
+    "webpack": "^4.40.2"
   }
 }
