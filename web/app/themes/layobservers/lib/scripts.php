@@ -64,7 +64,7 @@ function roots_scripts()
   }
 }
 
-add_action('wp_enqueue_scripts', 'roots_scripts', 100);
+add_action('wp_enqueue_scripts', 'roots_scripts', 10);
 
 // http://wordpress.stackexchange.com/a/12450
 function roots_jquery_local_fallback($src, $handle = null)

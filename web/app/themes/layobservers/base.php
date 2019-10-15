@@ -1,4 +1,3 @@
-<?php get_template_part('templates/head'); ?>
 <body <?php body_class(); ?>>
 
   <!--[if lt IE 8]>
@@ -9,9 +8,8 @@
 
   <?php
     do_action('get_header');
-    get_template_part('templates/header');
+    get_header();
   ?>
-
   <div class="wrap container" role="document">
     <div class="content row">
       <main class="main" role="main">
@@ -22,7 +20,7 @@
     </div><!-- /.content -->
   </div><!-- /.wrap -->
 
-  <?php get_template_part('templates/footer'); ?>
+  <?php get_footer(); ?>
 
   <!-- Go to www.addthis.com/dashboard to customize your tools -->
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-562f51153023de54" async="async"></script>
