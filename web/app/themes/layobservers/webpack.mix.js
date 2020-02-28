@@ -6,11 +6,9 @@ mix_.setPublicPath('./dist')
   .sass('./assets/sass/main.scss', 'css/main.min.css')
   .copy('./assets/img/*', 'dist/images/');
 
-
 mix_.browserSync({
   proxy: 'layobservers.docker'
 });
-
 
 if (mix_.inProduction()) {
   mix_.version();

@@ -28,12 +28,6 @@ function layobservers_register_required_plugins() {
     ),
 
     array(
-      'name'        => 'Google Analytics Dashboard for WP',
-      'slug'        => 'google-analytics-dashboard-for-wp',
-      'required'    => false,
-    ),
-
-    array(
       'name'        => 'Reorder Posts',
       'slug'        => 'metronet-reorder-posts',
       'required'    => true,
