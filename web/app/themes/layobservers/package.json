@@ -35,13 +35,10 @@
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "^2.0.1",
-    "details-element-polyfill": "^2.4.0",
-    "laravel-mix": "^4.1.4",
-    "resolve-url-loader": "^2.3.1",
-    "sass": "^1.22.12",
-    "sass-loader": "^7.3.1",
-    "scrollpoints": "^0.4.0",
-    "url-search-params-polyfill": "^4.0.0",
-    "vue-template-compiler": "^2.6.8"
+    "laravel-mix": "^5.0.4",
+    "resolve-url-loader": "^3.1.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
   }
 }
