@@ -38,4 +38,11 @@ foreach ( $roots_includes as $file ) {
 }
 unset( $file, $filepath );
 
+function remove_filename_bad_chars($filename) {
 
+    $bad_chars = array('#', '–', '~', '%', '|', '^', '>', '<', '['. ']');
+    $filename = str_replace($bad_chars, "", $filename);
+    return $filename;
+
+}
+add_filter('sanitize_file_name', 'remove_filename_bad_chars', 10);
